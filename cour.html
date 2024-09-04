@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="description" content="Découvrez les matières enseignées au Collège Privé Le ERON avec des descriptions détaillées pour chaque matière.">
+    <meta name="keywords" content="Collège Privé Le ERON, Matières, Cours, Éducation">
+    <meta name="author" content="Jaydipsinh Solanki">
+
+    <title>Matières - Collège Privé Le ERON</title>
+    
+    <link rel="stylesheet" href="css/main_style.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/svg+xml">
+    <style>
+        .header {
+            background-color: #007BFF;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+        .subjects {
+            padding: 50px 20px;
+            background-color: #f7f9fc;
+        }
+        .subjects h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .subjects .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .subjects .subject-col {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .subjects .subject-col:nth-child(odd) {
+            flex-direction: row;
+        }
+        .subjects .subject-col:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .subjects .subject-col img {
+            border-radius: 8px;
+            width: 150px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .subjects .subject-col h3 {
+            font-size: 1.8em;
+            margin: 0;
+            color: #333;
+        }
+        .subjects .subject-col p {
+            font-size: 1em;
+            color: #555;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+        }
+        .footer h4 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .footer p {
+            margin: 10px 0 0;
+        }
+
+        .footer {
+            padding: 30px 20px;
+            background-color: #f8f9fa;
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+        }
+        .footer h4 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #333;
+            font-weight: bold;
+        }
+        .footer p {
+            margin: 10px 0 0;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .footer .social-icons {
+            margin: 20px 0;
+        }
+        .footer .social-icons a {
+            margin: 0 15px;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+        .footer .social-icons img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+        }
+        .footer .social-icons a:hover {
+            transform: scale(1.1);
+        }
+        .footer .contact-info {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="image/logo.PNG" id="logo-img" alt="Logo"></a>
+
+            <div class="nav-links" id="navLinks">
+                <span class="icon" onclick="hidemenu()">&#10005;</span>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="cour.html">Cours</a></li>
+                    <li><a href="administration.html">Administration</a></li>
+                    <li><a href="scolarite.html">Scolarité</a></li>
+                </ul>
+            </div> 
+            <span class="icon" onclick="showmenu()">&#9776;</span>
+        </nav>
+       
+        <div class="text-box">
+            <h1>Matières Enseignées</h1>
+            <p>Découvrez les matières que nous proposons au Collège Privé Le ERON, adaptées aux exigences du programme éducatif ivoirien.</p>
+        </div>
+    </section>
+
+    <!-- Section Matières -->
+    <section class="subjects">
+        <h1>Les Matières</h1>
+
+        <div class="row">
+            <div class="subject-col" style="background-color: #e0f7fa;">
+                <img src="image/mathematics.jpg" alt="Mathématiques">
+                <div>
+                    <h3>Mathématiques</h3>
+                    <p>Les mathématiques sont essentielles pour développer des compétences en logique et en résolution de problèmes. Nos cours couvrent l'algèbre, la géométrie, et plus encore.</p>
+                </div>
+            </div>
+
+            <div class="subject-col" style="background-color: #fff3e0;">
+                <img src="image/sciences.jpg" alt="Sciences">
+                <div>
+                    <h3>Sciences</h3>
+                    <p>Les sciences comprennent la biologie, la chimie et la physique. Nos cours sont conçus pour offrir une compréhension approfondie des principes scientifiques fondamentaux.</p>
+                </div>
+            </div>
+
+            <div class="subject-col" style="background-color: #f1f8e9;">
+                <img src="image/languages.jpg" alt="Langues">
+                <div>
+                    <h3>Langues</h3>
+                    <p>Nous proposons des cours en langues étrangères, dont l'anglais, le français, et les langues locales. Ces matières sont cruciales pour développer des compétences en communication.</p>
+                </div>
+            </div>
+
+            <div class="subject-col" style="background-color: #fce4ec;">
+                <img src="image/history.jpg" alt="Histoire">
+                <div>
+                    <h3>Histoire</h3>
+                    <p>Les cours d'histoire offrent une vue d'ensemble des événements passés qui ont façonné notre monde. Les élèves explorent des périodes variées et des contextes historiques importants.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <section class="footer">
+        <h4>À Propos de Nous</h4>
+        <p>Le Collège Privé Le ERON est un établissement de premier plan dédié à une éducation de qualité. Nous offrons un enseignement rigoureux du primaire au secondaire, avec des salles de classe modernes, une salle informatique avancée, et une cantine proposant des repas équilibrés. Notre équipe pédagogique qualifiée accompagne chaque élève pour développer ses compétences académiques et personnelles. Nous visons à préparer nos élèves à un avenir réussi en les soutenant dans un environnement stimulant et bienveillant.</p>
+        <h4>Suivez-nous sur les Réseaux Sociaux</h4>
+        <div class="social-icons">
+            <a href="https://wa.me/your-number" target="_blank"><img src="image/whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://facebook.com/your-profile" target="_blank"><img src="image/facebook.png" alt="Facebook"></a>
+            <a href="https://instagram.com/your-profile" target="_blank"><img src="image/instagram.png" alt="Instagram"></a>
+            <a href="https://tiktok.com/@your-profile" target="_blank"><img src="image/tiktok.png" alt="TikTok"></a>
+            <a href="mailto:your-email@example.com"><img src="image/gmail.png" alt="Gmail"></a>
+        </div>
+        <div class="contact-info">
+            <p>Collège Privé Les ERONS</p>
+            <p>Adresse : [Votre adresse]</p>
+            <p>Téléphone : [Votre numéro]</p>
+            <p>Email : <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        </div>
+        <p id="copyright">© 2024 Collège Privé Les ERONS. Tous droits réservés.</p>
+    </section>
+
+    <!-- Javascript -->
+    <script src="javascript/main_script.js"></script>
+</body>
+</html>
